@@ -8,13 +8,13 @@ def index(req):
 
 
 def detail(req, question_id):
-    return HttpResponse("You are looking at question %s." % question_id)
+    return HttpResponse(f"You are looking at question {question_id}.")
 
 
 def results(req, question_id):
-    response = "You are looking at the results of question %s."
-    return HttpResponse(response % question_id)
+    response = f"You are looking at the results of question {question_id}."
+    return HttpResponse(response)
 
 
 def vote(req, question_id):
-    return HttpResponse("You are voting on question %s." % question_id)
+    return HttpResponse(f"You are voting on question {question_id}.")
